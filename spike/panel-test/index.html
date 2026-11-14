@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://api.github.com; img-src 'self'; form-action 'none'; base-uri 'none'">
+<title>Panel test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <button id="logo" type="button" aria-label="Logo">&#9670;</button>
+  <h1>Panel test</h1>
+  <p id="hint">Tap the logo 5 times.</p>
+  <section id="tools" hidden>
+    <button id="dispatch" type="button">Start test run</button>
+    <button id="tricky" type="button">Send tricky request</button>
+    <button id="status" type="button">Read last run</button>
+    <button id="write" type="button">Try to write a file</button>
+    <button id="lock" type="button">Lock</button>
+  </section>
+  <pre id="log" aria-live="polite"></pre>
+</main>
+<dialog id="unlock">
+  <form id="unlock-form">
+    <h2>Unlock</h2>
+    <label>Builder <input id="user" name="username" autocomplete="username" required></label>
+    <label>Token <input id="pass" name="password" type="password" autocomplete="current-password" required></label>
+    <div class="row"><button id="cancel" type="button">Cancel</button><button type="submit">Unlock</button></div>
+  </form>
+</dialog>
+<script src="app.js"></script>
+</body>
+</html>
