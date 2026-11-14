@@ -1,0 +1,9 @@
+body { font: 16px/1.5 system-ui, sans-serif; margin: 0; padding: 16px; background: #fff; color: #111; }
+@media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } }
+button { min-height: 48px; min-width: 48px; margin: 4px 8px 4px 0; padding: 0 16px; font: inherit; }
+#logo { font-size: 28px; }
+label { display: block; margin: 12px 0; }
+input { display: block; width: 100%; min-height: 48px; box-sizing: border-box; font: inherit; }
+dialog { width: min(420px, 90vw); }
+.row { display: flex; justify-content: flex-end; }
+pre { white-space: pre-wrap; word-break: break-word; }
